@@ -3,13 +3,17 @@
     padding: 0;
 }
 
+.main-container {
+    height: auto;
+}
+
 .container-header{
     background-color: #1F2937;
 }
 
 h1{
     font-size: 48px;
-    font-weight: bold;
+    font-weight: bolder;
     color: #F9FAF8;
 }
 
@@ -28,6 +32,16 @@ h1{
     color: #F9FAF8;
 }
 
+.container-random-information {
+    display:flex;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
 .container-quote{
     background-color: #E5E7EB;
 }
@@ -39,6 +53,18 @@ h1{
     color: #1F2937;
 }
 
+.container-sign-up,
+button
+{
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+h3{
+    color: #F9FAF8;
+}
+
 footer{
     background-color: #1F2937;
+    color: #E5E7EB;
 }
