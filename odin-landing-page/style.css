@@ -32,7 +32,6 @@
     /* align-items: center; */
     padding: 5rem 8rem;
     max-width: 100%;
-    
 }
 
 .content-hero {
@@ -119,4 +118,7 @@ h3{
 footer{
     background-color: #1F2937;
     color: #E5E7EB;
+    text-align: center;
+    padding-top: 1rem;
+    height: 40px;
 }
