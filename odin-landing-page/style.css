@@ -93,14 +93,31 @@ h2{
 }
 
 .container-quote{
+    height: 250px;
     background-color: #E5E7EB;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    flex-direction: column;
+
 }
 
 .quote{
     font-size: 36px;
     font-style: italic;
-    font-weight: lighter;
     color: #1F2937;
+    font-weight: normal;
+    outline: red 1px;
+    width: 40%;
+    display: flex;
+    text-align: justify;
+    justify-content:center;
+    padding-left: 33%;
+}
+
+.author{
+    display: inline;
+    align-items: self-end; 
 }
 
 .container-sign-up {
@@ -130,7 +147,7 @@ h2{
 #button2 {
     background-color: #3882F6;
     color: #F9FAF8;
-    margin-left: 4rem;
+    margin-left: 10rem;
     border: #F9FAF8 solid 2px;
     border-radius: 5%;
     font-weight: bold;
