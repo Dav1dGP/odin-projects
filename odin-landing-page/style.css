@@ -103,12 +103,38 @@ h2{
     color: #1F2937;
 }
 
-.container-sign-up,
-button
-{
+.container-sign-up {
+    height: 180px;
+   
+    
+    background-color: #F9FAF8;
+}
+
+.container-inside {
     background-color: #3882F6;
     color: #F9FAF8;
-    
+    padding: 2rem 3rem;
+    display:flex;
+    margin: 4rem 8rem;
+    align-items: center ;
+    justify-content: center;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.sign-up-text {
+    color: #E5E7EB;
+
+}
+
+#button2 {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    margin-left: 4rem;
+    border: #F9FAF8 solid 2px;
+    border-radius: 5%;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
 }
 
 h3{
