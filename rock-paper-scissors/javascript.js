@@ -1,15 +1,19 @@
 
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice () {
     const choices = ["rock", "paper", "scissors"];
     const randomChoices = Math.floor(Math.random() * choices.length);
     return choices[randomChoices];
 }
 
-console.log(getComputerChoice());
+//console.log(getComputerChoice());
 
 function getHumanChoice(){
     const humanChoice = prompt ("¿Choose one: rock, paper or scissors?");
     return humanChoice;
 }
 
-console.log(getHumanChoice());
+// console.log(getHumanChoice());
+
