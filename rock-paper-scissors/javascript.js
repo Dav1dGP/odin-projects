@@ -1,5 +1,5 @@
-let humanScore = 0;
-let computerScore = 0;
+let humanScore;
+let computerScore;
 
 function getComputerChoice () {
     const choices = ["rock", "paper", "scissors"];
@@ -20,7 +20,7 @@ function playRound (humanChoice, computerChoice){
     const humanChoice1 = humanChoice.toUpperCase();
     const computerChoice1 = computerChoice.toUpperCase();
     if(humanChoice1 === computerChoice1){
-        alert ("Draw! " + "You picked: " + humanChoice1 + " and the computer picked " + computerChoice1)
+        alert ("Draw! You picked: " + humanChoice1 + `and the computer picked ${computerChoice1}`)
     }
     else if (
         (humanChoice1 === "rock" && computerChoice1 ==="paper") || 
@@ -37,10 +37,27 @@ function playRound (humanChoice, computerChoice){
 
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+function playGame(){
+    
+    humanScore = 0;
+    computerScore = 0;
+    
+    for(let i = 0; i < 5; i++){
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection); 
+    }
+    if(humanScore > computerScore){
+        alert("You win the computer!! Congratulations!!");
+    }
+    else {
+        alert("You lose!! Try again !!")
+    }
+    console.log(`You have ${humanScore} points and the computer has ${computerScore}`)
+}
+
+playGame();
 
 // console.log(humanScore);
 // console.log(computerScore);
